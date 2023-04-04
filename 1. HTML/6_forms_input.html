@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input</title>
+</head>
+<body>
+    <h2>Html form tutorial</h2>
+
+    <!-- form tag asks for some info to be submitted in backend for future. All the data submitted will be stored automatically in the backend. For here its 'backend.php' -->
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <!-- to get input as text -->
+            <input type="text" name="myName" id='name'>
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            <!-- to get input as email -->
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            <!-- we can add data and time in the form-->
+            Date: <input type="date" name="myDate" id="">
+        </div>
+        <br>
+        <div>
+            <!-- for numeric text -->
+            Bonus: <input type="number" name="myBonus" id="">
+        </div>
+        <br>
+        <div>
+            <!-- checkbox allows selecting multiple options available -->
+            Are you Eligible: <input type="checkbox" name="myEligibily" checked>
+        </div>
+        <br>
+        <div>
+            <!-- radio buttons are such buttons that allows to select any one of the following options among all -->
+            Gender: Male<input type="radio" name="myGender" id="" checked> 
+            Female <input type="radio" name="myGender" id="">
+            Others <input type="radio" name="myGender" id="">
+        </div>
+        <br>
+        <div>
+            <label for="txt">Write about yourself: </label><br>
+            <textarea name="mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="Ben">Bentley</option>
+                <option value="In">Innova</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <!-- to get a submit button in the form -->
+            <input type="submit" value="Submit now" name="" id="">
+
+            <!-- to reset all info we can take help of reset button -->
+            <input type="reset" values="Reset now" name="" id="">
+        </div>
+    </form>
+</body>
+</html>

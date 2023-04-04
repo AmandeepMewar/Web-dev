@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin and Padding</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            border: 2px solid seagreen;
+            background-color:burlywood;
+
+            /* padding: y(top/bottom)  x(left/right); */  
+            padding: 10px 200px;
+            /* padding: top right bottom left*/
+            padding: 25px 17px 0px 100px;
+            padding-top: 15px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+
+            /* margin: y(top/bottom)  x(left/right) */
+            margin: 30px 200px;
+            /* margin: top right bottom left */
+            margin: 80px 300px 20px 50px;
+            margin-top: 100px;
+            margin-right: 250px;
+            margin-bottom: 100px;
+            margin-left: 250px;
+
+            border-radius: 20px;
+        }
+        #p1{
+            border-bottom: 2px dotted red;
+            background-color:lawngreen;
+            padding: 10px 10px;
+            border-radius: 20px 50px;
+        }
+        #p2{
+            background-color:yellow;
+            padding: 10px 30px;
+            border-radius: 15px 30px;
+        }
+        .box{
+            width: 300px;
+            height: 220px;
+            border: 2px dotted brown;
+            margin: 10px 300px 100px 400px;
+            padding: 10px 30px;
+
+            /* On giving width and height to an element and after that applying padding in the container the width also changes. It is because in the actual width of an element, margin is already been added to into it. */
+            /* in such cases we the property 'box-sizing' */
+            /* without box-sizing, box size will be same as decribed in width and height but padding will from margin.*/
+            /* but using box sizing, box size will adjust according to padding and its previous size. keep padding half of half of half of box size*/ 
+            /* check in inspect */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- content: the content of the box, where text and images appear -->
+    <!-- padding: it clears the area around the content. The padding is transparent -->
+    <!-- Border: a border is one that covers the padding and content -->
+    <!-- Margin: It clears out the area outside the border. The margin is also transparent -->
+
+    <div class="container">
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque nam est tempore modi sunt, ducimus a corrupti facilis eius molestias odit ratione. Recusandae aperiam repellat, doloremque dolorum veniam quos commodi possimus enim officiis.</p>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quas iusto facere ea explicabo vero quibusdam dolorum sint dolores exercitationem?</p>
+    </div>
+    <div class="box">
+        <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, alias.</p>
+        <p id="p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolorem tempore nihil ea totam quod magnam necessitatibus quis qui dolor, odio reprehenderit. Quisquam, quos fugiat! Minima nesciunt aperiam ipsum possimus!</p>
+    </div>
+
+    
+</body>
+</html>

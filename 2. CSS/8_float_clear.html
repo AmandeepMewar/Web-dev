@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            margin: 23px;
+            width: 450px;
+        }
+        .box {
+            width: 900px;
+            border: 2px solid brown;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 30px auto;
+            padding: 10px 5px;
+            background-color:lightyellow;
+        }
+
+        .container{
+            background-color: cornsilk;
+            padding: 12px 4px;
+            margin: 12px 3px;
+            border: 2px solid red;
+        }
+        #box1 {
+            border: 2px solid red;
+            float: right;
+            width: 48%;
+        }
+        #box2 {
+            border: 2px solid blueviolet;
+            float: left;
+            width: 48%;
+        }
+        #box3 {
+            border: 2px solid hotpink;
+            /*float: left;*/
+            clear: both;
+            clear: left;
+            width: 100%;
+        }
+        #box4 {
+            border: 2px solid hotpink;
+            /*float: left;*/
+            clear: both;
+            clear: left;
+            width: 100%;
+        }
+        p,h2{
+            text-align: justify;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Welcome Btech CSE</h1>
+        <div class="container" id="box1">
+            <h2>Section A</h2>
+            <p id="sectionD">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis unde expedita veritatis aliquam neque nam, quod minus similique quia adipisci, provident voluptas! Iusto nulla rem dicta corrupti blanditiis, voluptate, est vero tempore nam ipsam assumenda eum laboriosam sapiente libero maxime qui, et adipisci amet.</p>
+        </div>
+        <div class="container" id="box2">
+            <h2>Section B</h2>
+            <p id="sectionB">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dignissimos ab earum maxime explicabo dolores, perspiciatis eos, quas quam ut eum! Facere voluptates possimus alias harum, optio earum. Quia magni neque culpa obcaecati impedit, officia explicabo suscipit facere? Architecto nisi quam eaque voluptatibus reiciendis eos porro nam iure similique impedit!</p>
+        </div>
+        <div class="container" id="box3">
+            <h2>Section C</h2>
+            <p id="sectionC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, error. Quisquam quidem facilis exercitationem quam. Nemo mollitia magni maiores. Explicabo obcaecati fuga quidem accusamus optio quaerat reprehenderit eaque a tempore, laborum quisquam aspernatur corrupti dolorum ea quam consequatur excepturi accusantium.</p>
+        </div>
+        <div class="container" id="box4">
+            <h2>Section D</h2>
+            <p id="sectionD">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem perspiciatis aperiam ipsam, porro rerum similique id dolorum illo adipisci deserunt nulla voluptas! Laboriosam, voluptates? Consectetur vero dolor aperiam facilis. Incidunt, fuga. Eius eligendi ex quasi, officia nemo expedita molestias qui maiores libero ducimus. Voluptate cum minima minus voluptates sunt deserunt!</p>
+        </div>
+    </div>
+</body>
+
+</html>

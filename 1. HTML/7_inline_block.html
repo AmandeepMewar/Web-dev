@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block elements</title>
+</head>
+<body>
+    <!-- even after writing both paragraphs in same line and without line break,both outputs are on different lines -->
+    <!-- this is because paragraph tag is block element -->
+    <!-- block element means that it will take full width of a single line and does not allow any other element to fit in it -->
+    <p style="border: 2px solid red;">this is paragraph one</p> <p style="border: 2px solid blue;">this is paragraph two</p>
+
+
+    <!-- now we can see that both texts are appearing in the same line. -->
+    <!-- It is because the span tag is an inline element.  -->
+    <!-- this allows all the elements in the same line -->
+    <span style="border: 2px solid rosybrown">this is span one</span> <span style="border: 2px solid green;">this is span two</span>
+
+    <!-- Similarly we can find out about others html tags that whether they are block or inline. -->
+
+    <!-- so div is also a block element -->
+    <div style="border: 2px solid pink;">This is div one </div> <div style="border: 2px solid brown">this is div two</div>
+
+    <!-- block element -->
+    <li>this is line one</li> <li>this is line two</li>
+
+    <!-- img is an inline element -->
+    <img src="gym.jpg" alt="Error" width="540" height="360"> <img src="gym.jpg" alt="Error" width="540" height="360">
+</body>
+</html>

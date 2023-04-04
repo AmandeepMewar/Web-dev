@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Css Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        div p{
+            color: rgb(0, 0,128);
+            background-color: orange;
+            font-weight: bold;
+        }
+        /*div>p{          /* this is be applied to the to direct child of div 
+            background-color: lightblue;
+            color: white;
+        }*/
+        div+p{
+            color: white;
+            background-color: #D2302C;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is the innnermost paragraph</p>
+                </li>
+            </ul>
+            <p>This is paragraph one</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is third paragraph, the outer most</p>
+</body>
+</html>

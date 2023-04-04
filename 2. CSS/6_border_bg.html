@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #firstPara{
+            background-color: aqua;
+            height: 100px;
+            width: 455px;
+            border: 2px solid rebeccapurple;
+            /*
+            border-width: 2px;
+            border-style: solid;
+            border-color: green;
+            */
+            border-radius: 11px;
+
+            /* border-radius: y(top-left/bottom-right)  x(top-right/bottom-left);  */
+        }
+        #secondPara{
+            height: 100px;
+            width: 300px;;
+            border-top: 2px solid violet;
+            border-bottom: 2px solid gray;
+            border-left: 2px solid red;
+            border-right: 2px dotted blue;
+
+            background-color:gold;
+
+            border-top-left-radius: 10px;
+            border-top-right-radius: 2px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 12px;
+        }
+
+        #thirdPara{
+            height: 540px;
+            width: 800px;
+            background-image: url('gym.jpg');
+
+            /* repeat-x and repeat-y will make it repeat on x and y-axix */
+            background-repeat: repeat-x;  
+            
+            background-position: 10px 50px;
+            background-position: center center;
+            background-size: cover;
+            background-color:darkolivegreen;
+            border: 2px solid saddlebrown;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstPara">This is paragraph one</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondPara">This is paragraph two</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdPara">This is paragraph three</p>
+</body>
+</html>

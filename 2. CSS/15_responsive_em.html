@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        html{
+            font-size: 7px;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;   /* set 20 px em rem*/ 
+        }
+        .container{
+            /*font-size: 20px;*/  /*for em rem*/
+
+            border: 2px solid red;
+
+            /* vh stands for viewport height*/
+            /* vh is equal to 1/100 times of the viewport height*/
+            /* if heght of browser is 1000px, then 1vh is (1/100)*1000=10px */
+            height: 100vh;
+            width:400px;
+
+
+            /*vw stands for viewport width */
+            /* vw is equal to 1/100 times of the viewport width*/
+            /* if width of browser is 1000px, then 1vw is (1/100)*1000=10px */
+            width: 100vw;
+        }
+       /* #first{
+            font-size: 2em;
+            /* em - font-sizes are inherited relative to the parent element*/
+            /* 2em means 2 times of parent element i.e 40px*/
+       /* }
+
+        #second{*/
+            /* rem - font-size gets set according to the font size of the root element*/
+            /* in general html is the root element*/
+            /* in rem, r stands for root */
+            /* 10 times of root i.e 70px */
+            /*font-size: 10rem;
+        }*/
+
+    </style>
+</head>
+<body>
+    <!-- Responsive design is a way for a web developer to make a website adapt to all the devices and resolutions -->
+    <!-- ways to achieve responsive design -->
+    <!-- using rem/vh/vw units over pixels -->
+    <!-- using max-width/max-height -->
+    <!-- using css media queries  -->
+    <!-- setting up the viewport -->
+
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">this is third heading</h1>
+    </div>
+</body>
+</html>
